@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+body {
+  background-color: #b1bbb1;
+  color: #0f141e;
+  margin: 25px;
+  /* font-size: 16px; */
+  font-size: calc(12px + 4 * (100vw / 1366));
+  font-weight: normal;
+  font-family: "Jost", sans-serif;
+}
+@media (max-width: 1366px) {
+  body {
+    margin: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    /* font-size: 15px; */
+    margin: 15px;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    /* font-size: 14px; */
+    font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 1366));
+    margin: 5px;
+  }
+}
+@media (max-width: 426px) {
+  body {
+    /* font-size: 12px; */
+    margin: 3px;
+  }
+}
+
+/* Стилизация контейнера */
+.container {
+  max-width: 1050px;
+  margin: 0px auto;
+  background-color: #dadada;
+  padding: 25px 25px 5px 25px;
+  border-radius: 20px;
+  box-shadow: 0px -4px 10px 0px #929292;
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 950px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    padding: 20px 20px 5px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+    padding: 15px 15px 0px 15px;
+  }
+}
+@media (max-width: 426px) {
+  .container {
+    padding: 10px 10px 0px 10px;
+  }
+}
+
+/* Стилизация заголовков  */
+.main-header {
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-top: 0;
+  border: 0px solid #0f141e;
+  border-radius: 20px;
+  box-shadow: 0px -2px 10px 0px #929292;
+}
+@media (max-width: 426px) {
+  .main-header {
+    /* font-size: 14px; */
+    padding: 10px 5px;
+    margin-bottom: 12.5px;
+  }
+}
+.card .bossname-header {
+  text-align: center;
+  background-color: #f1f1f1;
+  position: relative;
+  top: 5px;
+  padding: 10px 15px;
+  margin: 0px -1px 10px 0px;
+  border-radius: 18px;
+  box-shadow: 0px -1px 5px 0px #929292;
+}
+.tactics-header {
+  border-bottom: 1px solid #ccc;
+  padding-left: 15px;
+}
+@media (max-width: 992px) {
+  .tactics-header {
+    padding-left: 12px;
+  }
+}
+
+/* Стилизация фоновых карточек. */
+.card {
+  padding: 25px 25px 15px 25px;
+  margin-bottom: 20px;
+  background: #f1f1f1;
+  border-radius: 20px;
+  box-shadow: inset 0px -2px 5px 0px #929292;
+}
+@media (max-width: 992px) {
+  .card {
+    padding: 20px 20px 10px 20px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .card {
+    padding: 20px 20px 10px 20px;
+  }
+}
+@media (max-width: 426px) {
+  .card {
+    padding: 15px 15px 8px 15px;
+    margin-bottom: 10px;
+  }
+}
+.card h2 {
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+@media (max-width: 992px) {
+  .card h2 {
+    margin-bottom: 13px;
+  }
+}
+@media (max-width: 426px) {
+  .card h2 {
+    margin-bottom: 10px;
+  }
+}
+.card h3 {
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+@media (max-width: 992px) {
+  .card h3 {
+    margin-top: 13px;
+  }
+}
+.card h4 {
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+@media (max-width: 992px) {
+  .card h4 {
+    margin-top: 13px;
+  }
+}
+.card p {
+  margin: 10px 0px;
+}
+@media (max-width: 992px) {
+  .card p {
+    margin: 9px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .card p {
+    margin: 8px 0px;
+  }
+}
+@media (max-width: 426px) {
+  .card p {
+    margin: 7px 0px;
+  }
+}
+
+/* Стилизация ссылок */
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  color: blue;
+}
+a:visited {
+  color: grey;
+}
+
+/* Тени для картинок */
+.ThemeImg {
+  border-radius: 20px;
+  box-shadow: 0px -2px 10px 0px #929292;
+  max-width: 100%;
+}
+.BossesImg-Rightside {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 1px -2px 10px 0px #929292;
+}
+.BossesImg-Leftside {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: -1px -2px 10px 0px #929292;
+}
+
+/* Газкулл блок */
+.box-ghaz {
+  display: flex;
+  position: relative;
+  margin-bottom: -10px;
+}
+.box-ghaz-txt {
+  display: flex;
+}
+.box-ghaz-img {
+  flex: 0 0 35%;
+  position: relative;
+  margin: 25px 0px 25px 25px;
+}
+.box-ghaz-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 1200px) or (min-width: 1200px) {
+  .box-ghaz-img-mobile {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .box-ghaz-img {
+    flex: 0 0 45%;
+    margin: 20px 0px 20px 20px;
+  }
+  .box-ghaz-img img {
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 840px) {
+  .box-ghaz-img img {
+    height: 68%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 767px) {
+  .box-ghaz-img {
+    display: none;
+  }
+  .box-ghaz-img-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 10px 0px 0px;
+  }
+}
+
+/* Тираны блок */
+.box-tyr {
+  display: flex;
+  margin-bottom: -10px;
+}
+.box-tyr-txt {
+  display: flex;
+}
+.box-tyr-img {
+  flex: 0 0 30%;
+  position: relative;
+  margin: 25px 25px 25px 0px;
+}
+.box-tyr-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 1200px) or (min-width: 1200px) {
+  .box-tyr-img-mobile {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .box-tyr-img {
+    flex: 0 0 35%;
+    margin: 20px 20px 20px 0px;
+  }
+}
+@media (max-width: 832px) {
+  .box-tyr-img img {
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 767px) {
+  .box-tyr-img {
+    display: none;
+  }
+  .box-tyr-img-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 10px 0px 0px;
+  }
+}
+
+/* Зарех блок */
+.box-szar {
+  display: flex;
+  margin-bottom: -10px;
+}
+.box-szar-txt {
+  display: flex;
+  align-items: center;
+}
+.box-szar-img {
+  flex: 0 0 35%;
+  position: relative;
+  margin: 25px 0px 25px 25px;
+}
+.box-szar-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 1200px) or (min-width: 1200px) {
+  .box-szar-img-mobile {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .box-szar-img {
+    flex: 0 0 35%;
+    margin: 20px 0px 20px 20px;
+  }
+  .box-szar-img img {
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 810px) {
+  .box-szar-img img {
+    height: 65%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 767px) {
+  .box-szar-img {
+    display: none;
+  }
+  .box-szar-img-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 10px 0px 0px;
+  }
+}
+
+.list-szar {
+  padding-left: 20px;
+  list-style: circle;
+}
+
+/* Мортарион блок */
+.box-mort {
+  display: flex;
+  margin-bottom: -10px;
+}
+.box-mort-txt {
+  display: flex;
+  align-items: center;
+}
+.box-mort-img {
+  flex: 0 0 33%;
+  position: relative;
+  margin: 25px 25px 25px 0px;
+}
+.box-mort-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 1200px) {
+  .mort-turn-conditions-txt1 {
+    display: none;
+  }
+  .box-mort-img {
+    flex: 0 0 25%;
+  }
+}
+@media (min-width: 1201px) {
+  .mort-turn-conditions-txt2 {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .box-mort-img {
+    margin: 20px 20px 20px 0px;
+  }
+  .box-mort-img img {
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 895px) {
+  .box-mort-img {
+    flex: 0 0 30%;
+    margin: 20px 20px 20px 0px;
+  }
+}
+@media (max-width: 815px) {
+  .box-mort-img img {
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (min-width: 767px) {
+  .box-mort-img-mobile {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .box-mort-img {
+    display: none;
+  }
+  .box-mort-img-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 10px 0px 0px;
+  }
+}
+
+.list-mort-attackorder {
+  padding-left: 20px;
+}
+
+/* Блок с тремя возможными вариантами карты Мортариона. */
+.box-mort-maps {
+  display: flex;
+  margin-top: 16px;
+}
+.box-mort-maps img {
+  max-width: 100%;
+}
+.mort-map1-img img {
+  border-radius: 20px;
+  box-shadow: -1px -2px 10px 0px #929292;
+}
+@media (max-width: 767px) {
+  .mort-map1-img img {
+    border-radius: 15px;
+  }
+}
+@media (max-width: 426px) {
+  .mort-map1-img img {
+    border-radius: 10px;
+  }
+}
+.subbox-mort-map2 {
+  margin: 0px 25px;
+}
+@media (max-width: 992px) {
+  .subbox-mort-map2 {
+    margin: 0px 20px;
+  }
+}
+@media (max-width: 426px) {
+  .subbox-mort-map2 {
+    margin: 0px 15px;
+  }
+}
+.mort-map2-img img {
+  border-radius: 20px;
+  box-shadow: 0px -2px 10px 0px #929292;
+}
+@media (max-width: 767px) {
+  .mort-map2-img img {
+    border-radius: 15px;
+  }
+}
+@media (max-width: 426px) {
+  .mort-map2-img img {
+    border-radius: 10px;
+  }
+}
+.mort-map3-img img {
+  border-radius: 20px;
+  box-shadow: 1px -2px 10px 0px #929292;
+}
+@media (max-width: 767px) {
+  .mort-map3-img img {
+    border-radius: 15px;
+  }
+}
+@media (max-width: 426px) {
+  .mort-map3-img img {
+    border-radius: 10px;
+  }
+}
+.box-mort-maps .text-align p {
+  text-align: center;
+  margin: 0;
+}
+
+.list-mort-priortargets {
+  padding-left: 20px;
+}
+
+.list-pvp-arena-recommendations {
+  padding-left: 20px;
+  margin: 10px 0px;
+}
+
+.list-promocodes {
+  list-style: circle;
+  padding-left: 20px;
+}
